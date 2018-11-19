@@ -802,8 +802,7 @@ type PullRequestEvent struct {
 type PullRequestReviewEvent struct {
 	Action      string      `json:"action"`
 	PullRequest PullRequest `json:"pull_request"`
-	Review      string      `json:"review"`
-	Changes     string      `json:"changes"`
+	Review      Review      `json:"review"`
 }
 
 // Review ..
